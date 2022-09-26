@@ -1,0 +1,121 @@
+/* ? Start Global Rools*/
+:root {
+    --main-color: #19c8fa;
+    --primary-color: ;
+    --secondary-color: ;
+    --tertiary-color: ;
+    --quaternary-color: ;
+    --main-transation: ;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth !important;
+}
+body {
+    font-family: 'Open Sans', sans-serif; 
+    background-color: black;  
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** Small*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/** Medium*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/** Large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* ? End Global Rools*/
+/* ? Start Hedaer*/
+header {
+
+}
+header .container {
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+}
+header .container::after{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid wheat;
+    bottom: 0;
+    width: calc(100% - 30px);
+    left: 15px;
+}
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li a{
+    display: block;
+    color: white;
+    padding: 30px 15px;
+    position: relative;
+        z-index: 3;
+    transition: 0.3;
+        -webkit-transition: 0.3;
+        -moz-transition: 0.3;
+        -ms-transition: 0.3;
+        -o-transition: 0.3;
+    
+}
+header nav ul li a.active,
+header nav ul li a:hover{
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+header nav .form{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid white;
+}
+header nav .form i{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+}
+/* ? End Header*/
