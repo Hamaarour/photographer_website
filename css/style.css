@@ -219,11 +219,11 @@ header nav .toggle-menu{
 .landing .bullets{
     position: absolute;
     left: 50%;
-    transform: translateX(50%);
-    -webkit-transform: translateX(50%);
-    -moz-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    -o-transform: translateX(50%);
+    transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
     bottom: 30px;
     display: flex;
 }
@@ -234,14 +234,27 @@ header nav .toggle-menu{
     border: 2px solid white;
     margin-right: 10px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
 }
 .landing .bullets li.active{
     background-color: var(--main-color);
     border-color: var(--main-color);
-
+}
+@media (max-width: 767px){
+    .landing .text{
+        width: 100%;
+    }
+    .landing .text .content{
+        max-width: 100%;
+    }
+    .landing .change-background {
+        display: none;
+    }
+    header nav ul li{
+        background-color: rgb(36 38 68);
+    }
 }
 /* ! END LANDING*/
