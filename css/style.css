@@ -253,7 +253,7 @@ header nav .toggle-menu{
     .landing .change-background {
         display: none;
     }
-    header nav ul li{
+    header nav  li{
         background-color: rgb(36 38 68);
     }
 }
